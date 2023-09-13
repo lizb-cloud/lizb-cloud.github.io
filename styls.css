@@ -108,3 +108,9 @@ color:#fffb00;
 a:visited{
     color:#ff0040;
 }
+
+@media only screen and (max-width:749px){
+    .parallax{
+        background-attachment: inherit;
+    }
+}
