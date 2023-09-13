@@ -12,15 +12,17 @@ body {
   color:aliceblue;
   padding-bottom:300px;
   overflow-x: hidden;
+  height: 100vh;
+
 }
 
 body:before{
     content:'Liz\'s Boutique';
-    position: fixed;
+    position:relative;
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    font-size:16em;
+    font-size:15em;
     font-weight:700;
     color:transparent;
     -webkit-text-stroke: 1px #000000;
@@ -29,11 +31,12 @@ body:before{
 
 }
 section{
-    position:relative;
+    position:flex;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height:100vh;
+    width: 100vh;
 }
 
 section h1{
@@ -44,7 +47,7 @@ section h1{
 }
 section .container{
     position: relative;
-    width:1000px;
+    width:800px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,4 +110,10 @@ color:#fffb00;
 }
 a:visited{
     color:#ff0040;
+}
+
+@media only screen and (max-device-width: 1366px){
+    .parallax{
+        background-attachment: scroll;
+    }
 }
